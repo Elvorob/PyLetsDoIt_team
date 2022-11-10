@@ -24,7 +24,7 @@ jobs:
             extra-pylint-options: ""
             extra-pycodestyle-options: ""
             extra-flake8-options: "--count --benchmark --ignore=E501"
-            extra-black-options: ". -s"
+            extra-black-options: ". -S"
             extra-mypy-options: ""
             extra-isort-options: ""
       - name: Update repo
