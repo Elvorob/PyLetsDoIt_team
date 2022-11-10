@@ -9,7 +9,9 @@ link = "https://www.saucedemo.com/"
 def test_user_is_authorized():
     o = webdriver.ChromeOptions()
     o.headless = True
-    browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=o)
+    browser = webdriver.Chrome(
+        service=Service(ChromeDriverManager().install()), options=o
+    )
     browser.get(link)
     input1 = browser.find_element(By.CSS_SELECTOR, "#user-name")
     input1.send_keys("standard_user")
