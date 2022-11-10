@@ -23,7 +23,7 @@ jobs:
             use-isort: false
             extra-pylint-options: ""
             extra-pycodestyle-options: ""
-            extra-flake8-options: "-count --benchmark --ignoreE501"
+            extra-flake8-options: "--count --benchmark --ignore=E501"
             extra-black-options: ". -s"
             extra-mypy-options: ""
             extra-isort-options: ""
