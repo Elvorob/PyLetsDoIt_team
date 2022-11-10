@@ -8,7 +8,8 @@ link = "https://www.saucedemo.com/"
 
 
 def test_user_is_authorized():
-    browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    browser = webdriver.Chrome(
+        service=Service(ChromeDriverManager().install()))
     time.sleep(10)
     browser.get(link)
     input1 = browser.find_element(By.CSS_SELECTOR, '#user-name')
@@ -20,5 +21,3 @@ def test_user_is_authorized():
     time.sleep(5)
     browser.find_element(By.CSS_SELECTOR, ".shopping_cart_link")
     browser.quit()
-
-
