@@ -30,9 +30,9 @@ jobs:
       - name: Update repo
         run: sudo apt-get update
       - name: Install software
-        run: sudo apt-get install -y chromium-browser
-      - name: Chromium version
-        run: chromium-browser --version
+        run: sudo apt-get install -y firefox
+      - name: Firefox version
+        run: firefox --version
       - name: Install poetry
         run: curl -sSL https://install.python-poetry.org | python3 -
       - name: Instal dependencies
