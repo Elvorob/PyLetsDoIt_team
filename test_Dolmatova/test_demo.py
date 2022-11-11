@@ -3,18 +3,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from selenium.common.exceptions import NoSuchElementException
+from browserelementisnotpresented import element_is_not_presented
 
 link = "https://www.saucedemo.com/"
-browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-
-
-def element_is_not_presented(method, locator):
-    try:
-        browser.find_element(method, locator)
-    except NoSuchElementException:
-        return True
-    return False
 
 
 def test_user_is_authorized():
