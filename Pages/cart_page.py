@@ -1,7 +1,7 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from Common.Selectors import *
+from common.Selectors import *
 from Pages.base_page import *
 
 

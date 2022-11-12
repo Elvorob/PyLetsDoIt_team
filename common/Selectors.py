@@ -7,7 +7,7 @@ class Loginlocators():
     BOX_LOGIN = (By.ID, "user-name")
     USER_NAME = "standard_user"
     BOX_PASSWORD = (By.ID, "password")
-    PASSWORD =  "secret_sauce"
+    PASSWORD = "secret_sauce"
     BT_LOGIN = (By.ID, "login-button")
 
 class CartLocators():
