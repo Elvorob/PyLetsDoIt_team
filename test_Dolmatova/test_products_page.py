@@ -1,5 +1,4 @@
 import time
-import pytest
 from Pages.Login_page import LoginPage
 from Pages.Products_page import ProductsPage
 
