@@ -1,6 +1,6 @@
 import time
-from Pages.Login_page import LoginPage
-from Pages.Products_page import ProductsPage
+from .Pages.Login_page import LoginPage
+from .Pages.Products_page import ProductsPage
 
 link = "https://www.saucedemo.com/"
 
