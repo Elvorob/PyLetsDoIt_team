@@ -1,7 +1,6 @@
 import pytest
+import time
 
-
-from Pages.login_page import *
 from Pages.cart_page import *
 
 
