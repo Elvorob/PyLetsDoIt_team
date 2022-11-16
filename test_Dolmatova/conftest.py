@@ -13,3 +13,12 @@ def browser():
     )
     yield browser
     browser.quit()
+
+
+@pytest.fixture(autouse=True)
+def test_fixture():
+    print("\n***first fixture***\n")
+
+
+def pytest_html_report_title(report):
+    report.title = "Anna Dolmatova"

@@ -7,6 +7,9 @@ link = "https://www.saucedemo.com/"
 
 class TestProductsPage:
     def test_user_is_authorized(self, browser):
+        """
+        login with valid credentials
+        """
         page = LoginPage(browser, link)
         page.open_page()
         time.sleep(2)
@@ -15,6 +18,9 @@ class TestProductsPage:
         page.should_be_authorized_user()
 
     def test_add_item_in_the_cart(self, browser):
+        """
+        add item in the cart from the Products page
+        """
         page = LoginPage(browser, link)
         page.open_page()
         time.sleep(2)
@@ -28,6 +34,9 @@ class TestProductsPage:
         page.item_added_to_cart()
 
     def test_remove_item_from_the_cart(self, browser):
+        """
+        remove item from the cart from the Products page
+        """
         page = LoginPage(browser, link)
         page.open_page()
         time.sleep(2)
